@@ -1,0 +1,33 @@
+# ===== Build outputs =====
+target/
+out/
+# 주의: bin/ 은 무시하지 않음 — h2/bin 에 H2 실행 jar가 들어있어서 제외하면 안 됨
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ===== Eclipse =====
+.classpath
+.project
+.settings/
+
+# ===== macOS =====
+.DS_Store
+
+# ===== Logs =====
+*.log
+
+# ===== H2 database data files (실제 DB 데이터는 제외, 프로그램은 포함) =====
+*.mv.db
+*.trace.db
+*.lock.db
+
+# ===== Claude Code 세션 =====
+.claude/
+
+# ===== 환경 변수 / 로컬 설정 =====
+.env
+*.local

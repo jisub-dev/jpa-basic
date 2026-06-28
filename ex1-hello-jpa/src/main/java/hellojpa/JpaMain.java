@@ -15,7 +15,6 @@ public class JpaMain {
         tx.begin();
 
         try {
-
             Team team = new Team();
             team.setName("TeamA");
             em.persist(team);
@@ -37,9 +36,6 @@ public class JpaMain {
             for (Member m : members) {
                 System.out.println("m.getUsername() = " + m.getUsername());
             }
-
-
-
 
             tx.commit();
         } catch (Exception e) {
